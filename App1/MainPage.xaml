@@ -9,9 +9,17 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <CaptureElement x:Name="captureElement" Stretch="UniformToFill"/>
-        <StackPanel>
-            <TextBlock Text="あああ" VerticalAlignment="Bottom" x:Name="FaceResultText" FontSize="180" />
-        </StackPanel>
+        <CaptureElement x:Name="captureElement" Stretch="UniformToFill" Visibility="Collapsed"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" TextAlignment="Center" Text="混雑状況を取得中...(チョット待っててね♪" VerticalAlignment="Bottom" x:Name="FaceResultText" FontSize="90" />
+            <TextBlock Grid.Row="1" FontSize="80">混雑状況がわかるラインを追加できるよ(´っ･ω･)っ□</TextBlock>
+            <Image Grid.Row="2" Stretch="Uniform" Source="Assets/image.png"></Image>
+        </Grid>
     </Grid>
 </Page>
