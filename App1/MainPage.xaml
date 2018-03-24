@@ -9,5 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <CaptureElement x:Name="captureElement" Stretch="UniformToFill"/>
+        <StackPanel>
+            <TextBlock Text="あああ" VerticalAlignment="Bottom" x:Name="FaceResultText" FontSize="180" />
+        </StackPanel>
     </Grid>
 </Page>
